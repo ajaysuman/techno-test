@@ -202,6 +202,9 @@
         if(bookingtime ==""){
             $('#bookingtime_err').text('Field Is Required');
         }
+        if(name =="" || email=="" || bookingtype =="" || bookingdate =="" || bookingslot =="" || bookingtime ==""){
+            return false; 
+        }
         // ++++++++++++++ For Update +++++++++++
         if(bookingId != ""){
         	$.ajax({
